@@ -1,0 +1,25 @@
+Ответ на первую задачу:
+
+function countVowel(str) {
+    const count = str.match(/[aeiou]/gi).length;
+    return count;
+}
+const string = prompt('Введите строку:');
+const res = countVowel(string);
+console.log(res);
+
+-------------------------------------------------------------
+Ответ на вторую задачу:
+
+function replace(str) {
+    const simbol = /a/gi
+    const newSimbol = '#'
+    const newStr = str.replace (simbol, newSimbol)
+    return newStr
+}
+const string = prompt ('Введите строку:')
+const res = replace (string)
+console.log(res)
+
+--------------------------------------------------------------
+Ответ на третью задачу:
