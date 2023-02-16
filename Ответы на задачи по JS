@@ -1,7 +1,7 @@
 Ответ на первую задачу:
 
 function countVowel(str) {
-    const count = str.match(/[aeiou]/gi).length;
+    const count = str.match(/[аеиоу]/gi).length;
     return count;
 }
 const string = prompt('Введите строку:');
@@ -22,4 +22,12 @@ const res = replace (string)
 console.log(res)
 
 --------------------------------------------------------------
-Ответ на третью задачу:
+Ответ на третью задачу: (тут самым логичным решением для меня стало применение массива и цикла...)
+
+const string = "каждый охотник желает знать. где сидит фазан";
+const words = string.split(' ');
+for (let i = 0; i < words.length; i++) {
+    words[i] = words[i][0].toUpperCase() + words[i].substring(1);
+}
+
+console.log(words.join(" "))
