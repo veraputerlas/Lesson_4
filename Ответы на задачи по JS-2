@@ -1,0 +1,42 @@
+Ответ на задачу №1:
+function getMaxAscArray(arr) {
+    let newArr = [];
+    let maxArr = [];
+    for (let i = 0; i < arr.length; i++) {
+        newArr.push(arr[i]);         
+        if (maxArr.length < newArr.length) {
+            maxArr = newArr;
+        }        
+        if (arr[i] + 1 !== arr[i + 1]) {
+            newArr = [];
+        }
+    }    
+    if (maxArr.length < 2) {
+        maxArr = [arr.sort()[0]];
+    }    
+    return maxArr;
+}
+const res =  getMaxAscArray ([])
+console.log(res)
+
+------------------------------------------------------
+
+Ответ на задачу №2:
+
+function fibonachy(num) { 
+  let i1 = 1;
+  let i2 = 1;
+  for (let count = 3; count <= num; count++){ 
+    let i3 = i1 + i2;
+    i1 = i2;
+    i2 = i3;
+  }
+  if (num === 0) {
+    return 0;
+} else {
+   return i2;
+}
+}
+
+const res = fibonachy (6)
+console.log (res)
