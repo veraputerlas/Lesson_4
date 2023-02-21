@@ -40,3 +40,22 @@ function fibonachy(num) {
 
 const res = fibonachy (6)
 console.log (res)
+
+-----------------------------------------------------
+
+Ответ на задачу №3
+
+1) Самый очевидный и простой:
+let arr = [1, 2, 3, 4, 5]
+arr.reverse()
+
+2) Не самый очевидный и не такой простой:
+function arrReverse(arr){
+ let newArr = [];
+for (let i = arr.length - 1; i >= 0; i--) {
+        newArr.push(arr[i]);
+}
+return newArr;
+ }
+ const res = arrReverse([1, 2, 3, 4, 5]);
+console.log(res)
