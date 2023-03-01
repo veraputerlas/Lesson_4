@@ -1,10 +1,26 @@
 1. Ответ на задачу 1
 
-const printHill = number
-function {
+const printHill = number => {
     for(let i = 1; i <= number; i++) {
         console.log("#".repeat(i))
     }
-    
+};
+console.log(printHill(6));
+
 2. Ответ на задачу 2
+
+const calculateList_2 = list => {
+    let sum = 0;
+    for (const number of list) {
+      if (number > 0 && number % 2) {
+        sum = sum + number;
+      }
+    }
+    return sum;
+  };
+  console.log(calculateList_2([5, 17, -5, 0, -2, -32, 16, 88]))
+  
+  3. Ответ на задачу 3
+  
+  
 
