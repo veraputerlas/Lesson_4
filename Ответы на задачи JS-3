@@ -7,20 +7,32 @@ const printHill = number => {
 };
 console.log(printHill(6));
 
+-----------------------------------------------
+
 2. Ответ на задачу 2
 
-const calculateList_2 = list => {
+const calk = (arr) => {
     let sum = 0;
-    for (const number of list) {
-      if (number > 0 && number % 2) {
-        sum = sum + number;
-      }
+    for (const number of arr) {
+    if (number > 0 && number % 2 !== 0) {
+    sum = sum + number;
+    }
     }
     return sum;
-  };
-  console.log(calculateList_2([5, 17, -5, 0, -2, -32, 16, 88]))
+    }
+    console.log (calk([2, 3, 5]));
   
-  3. Ответ на задачу 3
+  ----------------------------------------------
+  6. Ответ на задачу 6:
+  
+  function pal(str) {
+    if (str === str.split('').reverse().join('')){
+        return true;
+    }else{
+        return false;
+    }
+}
+console.log(pal('шалаш')) 
   
   
 
