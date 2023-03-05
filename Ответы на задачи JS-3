@@ -23,6 +23,20 @@ const calk = (arr) => {
     console.log (calk([2, 3, 5]));
   
   ----------------------------------------------
+  
+  4. Ответ на задачу 4:
+  
+   const sumDigit = num => {
+    num = String(num);
+    let sumAll = 0;
+    for (let i = 0; i < num.length; i++) {
+        sumAll += +num[i];
+    }
+    return sumAll;
+}
+console.log(sumDigit(123569));
+
+------------------------------------------------
   6. Ответ на задачу 6:
   
   function pal(str) {
