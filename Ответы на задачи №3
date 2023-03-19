@@ -1,0 +1,27 @@
+Ответ на задачу 1:
+function CreateButton(textContent, color, callBack) {
+    this.textContent = textContent;
+    this.color = color;
+    this.callBack = callBack;
+  
+    this.layout = () => {
+      let button = document.createElement('button');
+      button.type = 'button';
+      button.style.background = this.color;
+      button.innerText = this.textContent;
+      button.setAttribute('onclick', `(${this.callBack})()`);
+      return button.outerHTML;
+    };
+  
+    this.setTextContent = (newTextContent) => this.textContent = newTextContent;
+  
+    this.setCallBack = (newCallBack) => this.callBack = newCallBack;
+    
+  }
+  let button = new CreateButton('Нажми на меня', 'red', () => { alert('Хай') });
+button.setTextContent('Привет');
+button.setCallBack(() => { alert('Как дела?'); });
+  document.write(button.layout());
+  
+  Ответ на задац 2:
+  
