@@ -25,3 +25,28 @@ button.setCallBack(() => { alert('Как дела?'); });
   
   Ответ на задац 2:
   
+  class CreateInpit {
+    constructor(placeholder, value, callBack) {
+    this.placeholder = placeholder;
+    this.value = value;
+    this.callBack = callBack;
+
+    this.layot = () => {
+        let input = document.createElement('input');
+        input.type = 'text';
+        input.innerText = this.textContent
+        input.setAttribute('oninput', (${this.callBack})());
+        return input.outerHTML;
+    }
+    this.setPlaceholder = (newPlaceholder) => this.placeholder = newPlaceholder;
+    this.setValue = (newValue) => this.value = newValue;
+    this.setCallBack = (newCallBack) => this.callBack = newCallBack;
+    }
+}
+
+let input = new CreateInpit('Привет');
+input.setPlaceholder('Привет');
+input.setCallBack(() => { alert('Как дела?'); });
+
+document.write(input.layot());
+  
